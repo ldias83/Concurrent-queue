@@ -9,7 +9,6 @@ It demonstrates how to build a simple, cache-friendly, multi-threaded queue usin
 
 - Lock-free single-producer single-consumer design
 - Fixed-size circular buffer (`std::array`)
-- Cache line padding to reduce false sharing
 - Modern C++ atomics with explicit memory ordering
 
 ---
