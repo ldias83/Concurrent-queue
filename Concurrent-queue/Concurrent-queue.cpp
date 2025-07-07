@@ -4,7 +4,7 @@
 #include <array>
 
 struct alignas(64) PaddedIndex {
-    std::atomic<std::size_t> value{ 0 };
+    std::atomic<std::size_t> value { 0 };
 };
 
 template<typename T, size_t N>
@@ -46,7 +46,7 @@ int main() {
     RingQueue<int, 8> q;
 	
     std::thread prod([&] {
-        for (int i { 1} ; i <= 20; ++i)
+        for (int i { 1 } ; i <= 20; ++i)
             while (!q.push(i));   // busy‑wait if full
     });
 
