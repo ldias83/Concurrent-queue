@@ -50,7 +50,7 @@ int main() {
             while (!q.push(i));   // busy‑wait if full
     });
 
-	std::thread cons([&] {
+    std::thread cons([&] {
         int v;
         for (int i { 1 }; i <= 20; ++i) {
             while (!q.pop(v));
